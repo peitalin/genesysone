@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "next build",
+    "export": "next export",
+    "dev": "next",
+    "start": "next start",
+    "generate": "next build; next export"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "ismobilejs": "^0.4.1",
+    "lodash": "^4.17.4",
+    "next": "^4.2.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

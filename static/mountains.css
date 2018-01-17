@@ -1,0 +1,19 @@
+
+.mountain {
+  position: absolute;
+  width: 100vw;
+  left: -1px;
+  bottom: 0%;
+  font-size: 1em;
+  transition-duration: 40ms;
+  transition-timing-function: linear;
+}
+
+#mount1 {
+  bottom: -10%;
+}
+
+#mount2 {
+  bottom: -5%
+}
+
