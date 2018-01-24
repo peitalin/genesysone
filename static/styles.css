@@ -199,9 +199,9 @@ ul {
 }
 .link-container {
   display: flex;
-  justify-content: space-around;
-  width: 33%;
-  padding: 20px 33% 10px 33%;
+  justify-content: space-between;
+  width: 40%;
+  padding: 20px 30% 10px 30%;
 }
 .social-icon {
   filter: grayscale(1);
