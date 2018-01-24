@@ -29,6 +29,7 @@ const Header = (props) => (
     <link rel="icon" type="image/png" sizes="32x32" href={ STATIC_DIR + "favicon/favicon-32x32.png" }/>
     <link rel="icon" type="image/png" sizes="96x96" href={ STATIC_DIR + "favicon/favicon-96x96.png" }/>
     <link rel="icon" type="image/png" sizes="16x16" href={ STATIC_DIR + "favicon/favicon-16x16.png" }/>
+    <link rel="shortcut icon" href={ STATIC_DIR + "favicon/favicon.ico" }/>
     <link rel="manifest" href={ STATIC_DIR + "favicon/manifest.json" }/>
     <meta name="msapplication-TileColor" content="#444444"/>
     <meta name="msapplication-TileImage" content={ STATIC_DIR + "favicon/ms-icon-144x144.png" }/>
