@@ -10,9 +10,8 @@ const FUNDNAME = 'GenesysOne'
 const Header = (props) => (
   <Head>
     <title>{( FUNDNAME +  "Capital | Cryptoasset Investments")}</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
     <link href={ STATIC_DIR + "styles.css" } rel="stylesheet" />
-    <link href={ STATIC_DIR + "mountains.css" } rel="stylesheet" />
     <link href={ STATIC_DIR + "navbar.css" } rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
@@ -30,7 +29,6 @@ const Header = (props) => (
     <link rel="icon" type="image/png" sizes="96x96" href={ STATIC_DIR + "favicon/favicon-96x96.png" }/>
     <link rel="icon" type="image/png" sizes="16x16" href={ STATIC_DIR + "favicon/favicon-16x16.png" }/>
     <link rel="shortcut icon" href={ STATIC_DIR + "favicon/favicon.ico" }/>
-    <link rel="manifest" href={ STATIC_DIR + "favicon/manifest.json" }/>
     <meta name="msapplication-TileColor" content="#444444"/>
     <meta name="msapplication-TileImage" content={ STATIC_DIR + "favicon/ms-icon-144x144.png" }/>
     <meta name="theme-color" content="#222222"/>
@@ -45,8 +43,9 @@ const Logo = (props) => (
 )
 
 const Layout = (props) => (
-  <div className='genesis-container'>
+  <div>
     <Header/>
+    <style jsx global>{StyleString}</style>
     <Parallax staticDir={STATIC_DIR}/>
     <Logo/>
     <Mountain1 id="mount1" fill={"#fafafa"} />
@@ -54,5 +53,97 @@ const Layout = (props) => (
     { props.children }
   </div>
 )
+
+const StyleString = `
+body {
+  overflow-x: hidden;
+  font-family: Cousine, Inconsolata;
+  font-size: 12pt;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  color: #222;
+  background-color: #fafafa;
+  -webkit-tap-highlight-color: #ddd;
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  font-family: Lobster;
+  text-align: center;
+  color: #222;
+  margin: 0;
+}
+h2 {
+  font-size: 1.6rem;
+  txt-align: center;
+  margin: 0;
+}
+h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+@keyframes fadeInParallax {
+  from {
+    opacity: 0;
+  }
+}
+.parallax {
+  background-repeat: no-repeat no-repeat;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+#parallaxBox1 {
+  height: 100vh;
+  background-color: #fefefe;
+}
+.mountain {
+  position: absolute;
+  width: 100vw;
+  left: -1px;
+  bottom: 0%;
+  font-size: 1em;
+  transition-duration: 96ms;
+  transition-timing-function: linear;
+  -webkit-animation: fadeInParallax 0.3s ease-in;
+  animation: fadeInParallax 0.3s ease-in;
+}
+#mount1 {
+  bottom: -10%;
+  -webkit-animation: fadeInParallax 0s ease-in;
+  animation: fadeInParallax 0s ease-in;
+}
+@media (orientation: portrait) {
+  #mount1 {
+    bottom: -4%;
+  }
+}
+#mount2 {
+  bottom: -5%
+}
+.main-title {
+  width: 100vw;
+  margin-top: 36vh;
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  transition-duration: 96ms;
+  transition-timing-function: linear;
+}
+.main-title-sub {
+  margin-top: 5px;
+  font-size: 10pt;
+}
+`
 
 export default Layout

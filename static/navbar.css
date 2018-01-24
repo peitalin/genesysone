@@ -17,7 +17,7 @@
 }
 
 .navbar-fixed-container {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0px;
   z-index: 1;
@@ -30,7 +30,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.24);
 }
 #navbar-fixed {
-  width: 100%;
+  width: 100vw;
   transform: translate3d(0, -80px, 0);
   transition: all 0.3s cubic-bezier(.95,-0.1,0,1.2);
 }

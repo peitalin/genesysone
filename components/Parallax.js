@@ -16,9 +16,12 @@ class Parallax extends React.Component {
     }
   }
 
+  componentWillMount() {
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', throttle(this.handleScroll, 32))
-    window.addEventListener('resize', throttle(this.handleResize, 32))
+    window.addEventListener('resize', this.handleResize)
     this.handleResize()
     this.setState({
       elems: {
@@ -41,36 +44,25 @@ class Parallax extends React.Component {
   }
 
   handleResize = () => {
-    if (this.state.windowHeight == window.innerHeight && this.state.windowWidth == window.innerWidth) {
-      return;
-    } else {
-      // console.log(`windowHeight: ${window.innerHeight}, windowWidth: ${window.innerWidth}`);
-      this.setState({
-          windowWidth: window.innerWidth
-      })
-      // let fixedContainerHeight = document.getElementById('fixedContainer1').clientHeight
-      this.setState({
-        threshold1: window.innerHeight,
-      })
-    }
+    this.setState({
+        windowWidth: window.innerWidth
+    })
+    // let fixedContainerHeight = document.getElementById('fixedContainer1').clientHeight
+    this.setState({
+      threshold1: window.innerHeight,
+    })
     this.scaleParallaxHeight()
   }
 
   scaleParallaxHeight = () => {
-    if (this.state.elems.parallaxBox1) {
-      var viewportRatio = window.innerWidth / window.innerHeight
-      var viewportScale = (viewportRatio > 1.4) ? 0.3 : 0.25
-      document.getElementById("parallaxBox1").style.transitionDuration = "height 200ms ease"
-      // document.getElementById("parallaxBox1").style.height = `
-      //     ${Math.round( (viewportRatio - viewportScale * viewportRatio) * 100 )}vh
-      // `
-      setTimeout(function() {
-          document.getElementById("parallaxBox1").style.transitionDuration = "height 20000s ease"
-      }, 100)
-    }
-    if (window.innerHeight > window.innerWidth*1.5) {
-      document.getElementById("mount1").style.bottom = "-5%"
-    }
+    // var viewportRatio = window.innerWidth / window.innerHeight
+    // var viewportScale = (viewportRatio > 1.4) ? 0.3 : 0.25
+    // document.getElementById("parallaxBox1").style.height = `
+    //     ${Math.round( (viewportRatio - viewportScale * viewportRatio) * 100 )}vh
+    // `
+    setTimeout(function() {
+        document.getElementById("parallaxBox1").style.transitionDuration = "height 20000s ease"
+    }, 100)
   }
 
   handleScroll = (event) => {
@@ -117,7 +109,7 @@ class Parallax extends React.Component {
   render() {
     const imgDir = this.props.staticDir + 'img/'
     return (
-      <div className="parallax" id="parallaxBox1">
+      <div className="parallax" id="parallaxBox1" style={{ filter: 'grayscale(1)' }}>
         {/* <img id="mount7" className='mountain' src={imgDir + "mount7.svg"}/> */}
         <img id="mount6" className='mountain' src={imgDir + "mount6.svg"}/>
         {/* <img id="mount5" className='mountain' src={imgDir + "mount5.svg"}/> */}

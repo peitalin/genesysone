@@ -77,14 +77,16 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        {this.landingLanguages(this.state.language)}
-        <div className='navbar-fixed-container' id='navbar-fixed'>
-          {this.renderNavbar('fixed')}
-        </div>
-        {this.renderNavbar('static')}
-        <div className="section1">
-          <RenderPage page={this.state.page} fundname={this.state.fundname} language={this.state.language}/>
-          <Footer/>
+        <div>
+          {this.landingLanguages(this.state.language)}
+          <div className='navbar-fixed-container' id='navbar-fixed'>
+            {this.renderNavbar('fixed')}
+          </div>
+          {this.renderNavbar('static')}
+          <div className="section1">
+            <RenderPage page={this.state.page} fundname={this.state.fundname} language={this.state.language}/>
+            <Footer/>
+          </div>
         </div>
       </Layout>
     )

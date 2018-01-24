@@ -1,66 +1,5 @@
 
-/* ----------- Desktop ----------- */
-body {
-  overflow-x: hidden;
-  font-family: Cousine, Inconsolata;
-  font-size: 12pt;
-  width: 100vw;
-  margin: 0px;
-  padding: 0px;
-  color: #222;
-  background-color: #fafafa;
-  -webkit-tap-highlight-color: #ddd;
-}
-h1 {
-  font-size: 2.6rem;
-  font-weight: 400;
-  font-family: Lobster;
-  text-align: center;
-  color: #222;
-  margin: 0;
-}
-h2 {
-  font-size: 1.6rem;
-  txt-align: center;
-  margin: 0;
-}
-h2 {
-  font-size: 1.4rem;
-  margin: 0;
-}
-ul {
-  padding: 0;
-  margin: 0;
-}
 
-
-
-
-
-.genesis-container {
-  margin: 0;
-}
-
-.main-title {
-  width: 100vw;
-  margin-top: 36vh;
-  top: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #222;
-  transition-duration: 96ms;
-  transition-timing-function: linear;
-  /* animation: fadeIn 0.6s cubic-bezier(0.6,0,0.4,1); */
-  /* animation-delay: 0s; */
-}
-.main-title-sub {
-  margin-top: 5px;
-  font-size: 10pt;
-}
 
 .section1 {
   position: absolute;
@@ -69,7 +8,6 @@ ul {
   background-color: #fafafa;
   position: absolute;
 }
-
 
 .thesis {
   margin: 0% 10% 0% 10%;
@@ -93,26 +31,6 @@ ul {
   }
 }
 
-
-// Parallax
-.parallax {
-  position: relative;
-  background-repeat: no-repeat no-repeat;
-  overflow: hidden;
-  background-size: 100 auto;
-  background-position: 50% 50%;
-  background-attachment: fixed;
-  opacity: 0.9;
-}
-
-#parallaxBox1 {
-  filter: grayscale(1);
-  height: 100vh;
-  background-color: #fefefe;
-  /* background-image: url("https://i.pinimg.com/564x/1b/ac/7d/1bac7d2bc8738dec878b27742863d42d.jpg"); */
-  /* background-position: 50% 50%; */
-  /* background-attachment: fixed; */
-}
 
 .white-fill {
   position: absolute;
@@ -193,15 +111,20 @@ ul {
   }
 }
 
-
 .footer {
   background-color: #f6f6f6;
+}
+.social-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .link-container {
   display: flex;
   justify-content: space-between;
-  width: 40%;
-  padding: 20px 30% 10px 30%;
+  width: 30vw;
+  min-width: 200px;
+  padding: 20px 20px 10px 20px;
 }
 .social-icon {
   filter: grayscale(1);
