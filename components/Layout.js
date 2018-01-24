@@ -16,6 +16,23 @@ const Header = (props) => (
     <link href={ STATIC_DIR + "navbar.css" } rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="57x57" href={ STATIC_DIR + "/apple-icon-57x57.png" }/>
+    <link rel="apple-touch-icon" sizes="60x60" href={ STATIC_DIR + "/apple-icon-60x60.png" }/>
+    <link rel="apple-touch-icon" sizes="72x72" href={ STATIC_DIR + "/apple-icon-72x72.png" }/>
+    <link rel="apple-touch-icon" sizes="76x76" href={ STATIC_DIR + "/apple-icon-76x76.png" }/>
+    <link rel="apple-touch-icon" sizes="114x114" href={ STATIC_DIR + "/apple-icon-114x114.png" }/>
+    <link rel="apple-touch-icon" sizes="120x120" href={ STATIC_DIR + "/apple-icon-120x120.png" }/>
+    <link rel="apple-touch-icon" sizes="144x144" href={ STATIC_DIR + "/apple-icon-144x144.png" }/>
+    <link rel="apple-touch-icon" sizes="152x152" href={ STATIC_DIR + "/apple-icon-152x152.png" }/>
+    <link rel="apple-touch-icon" sizes="180x180" href={ STATIC_DIR + "/apple-icon-180x180.png" }/>
+    <link rel="icon" type="image/png" sizes="192x192" href={ STATIC_DIR + "/android-icon-192x192.png" }/>
+    <link rel="icon" type="image/png" sizes="32x32" href={ STATIC_DIR + "/favicon-32x32.png" }/>
+    <link rel="icon" type="image/png" sizes="96x96" href={ STATIC_DIR + "/favicon-96x96.png" }/>
+    <link rel="icon" type="image/png" sizes="16x16" href={ STATIC_DIR + "/favicon-16x16.png" }/>
+    <link rel="manifest" href={ STATIC_DIR + "/manifest.json" }/>
+    <meta name="msapplication-TileColor" content="#222222"/>
+    <meta name="msapplication-TileImage" content={ STATIC_DIR + "/ms-icon-144x144.png" }/>
+    <meta name="theme-color" content="#222222"/>
   </Head>
 )
 
