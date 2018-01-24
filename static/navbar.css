@@ -1,25 +1,17 @@
 
 .navbar {
+  position: relative;
   padding: 1%;
   margin: 5px 20%;
-  z-index: 1;
   left: 0%;
   width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid #aaa;
-}
-
-.navbar-relative-container {
-  position: relative;
-  top: 0px;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   background-color: #fafafa;
 }
+
 #navbar-relative {
   transition: all 0.3s cubic-bezier(.85,-0.2,0,1.7);
 }
@@ -49,7 +41,8 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: RGB(144, 224, 243);
+  /* color: RGB(144, 224, 243); */
+  color: #D4AFDF;
 }
 a.highlighted {
   text-decoration: underline;
@@ -72,7 +65,8 @@ a.highlighted {
 }
 
 .nav-inside a:hover {
-  color: RGB(144, 224, 243);
+  /* color: RGB(144, 224, 243); */
+  color: #D4AFDF;
   transition: color 0.2s ease;
 }
 .nav-inside a {
