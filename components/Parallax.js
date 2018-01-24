@@ -18,7 +18,7 @@ class Parallax extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', throttle(this.handleScroll, 32))
-    window.addEventListener('resize', throttle(this.handleResize, 64))
+    window.addEventListener('resize', throttle(this.handleResize, 32))
     this.handleResize()
     this.setState({
       elems: {
