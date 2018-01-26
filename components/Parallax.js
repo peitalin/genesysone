@@ -62,7 +62,7 @@ class Parallax extends React.Component {
     // `
     setTimeout(function() {
         document.getElementById("parallaxBox1").style.transitionDuration = "height 20000s ease"
-    }, 100)
+    }, 50)
   }
 
   handleScroll = (event) => {

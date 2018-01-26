@@ -35,20 +35,6 @@
   transition: all 0.3s cubic-bezier(.95,-0.1,0,1.2);
 }
 
-a {
-  text-decoration: none;
-  color: #999;
-}
-a:hover {
-  cursor: pointer;
-  /* color: RGB(144, 224, 243); */
-  color: #D4AFDF;
-}
-a.highlighted {
-  text-decoration: underline;
-  color: #444;
-}
-
 .nav-inside {
   height: 100%;
   width: 100%;

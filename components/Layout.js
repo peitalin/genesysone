@@ -87,20 +87,35 @@ ul {
   padding: 0;
   margin: 0;
 }
-@keyframes fadeInParallax {
-  from {
-    opacity: 0;
-  }
+a {
+  text-decoration: none;
+  color: #999;
 }
+a:hover {
+  cursor: pointer;
+  color: #D4AFDF;
+}
+a.highlighted {
+  text-decoration: underline;
+  color: #444;
+}
+
+
 .parallax {
   background-repeat: no-repeat no-repeat;
-  overflow: hidden;
+  overflow-x: hidden;
   background-position: 50% 50%;
   background-attachment: fixed;
 }
 #parallaxBox1 {
+  overflow-x: hidden;
   height: 100vh;
   background-color: #fefefe;
+}
+@keyframes fadeInParallax {
+  from {
+    opacity: 0;
+  }
 }
 .mountain {
   position: absolute;
@@ -143,6 +158,41 @@ ul {
 .main-title-sub {
   margin-top: 5px;
   font-size: 10pt;
+}
+
+@keyframes fadeInLanguages {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+}
+
+.landing-languages {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -webkit-animation: fadeInLanguages 1s cubic-bezier(0.6,0,0.4,1);
+  animation: fadeInLanguages 1s cubic-bezier(0.6,0,0.4,1);
+}
+.languages {
+  margin: 0.2rem;
+  color: #eaeaea;
+}
+.languages a {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+.languages a:hover {
+}
+.languages.selected-language a {
+  transition: all 0.2s ease;
+  font-weight: bold;
+  color: #222;
 }
 `
 
