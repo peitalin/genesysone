@@ -23,14 +23,14 @@ const EnglishPhilosophy = (props) => {
       <h2>We make investments in cryptoassets</h2>
 
       <div className="section-container">
-        <i>{props.fundname}</i> is a boutique hedge fund that manages a portfolio of cryptoassets. We specialize in providing access to new cryptoassets and hedging strategies that utilize asset-backed cryptoassets to mitigate downside exposures.
+        <i>{props.fundname}</i> is a boutique hedge fund that manages a portfolio of cryptoassets. We specialize in providing access to new cryptoassets and hedging strategies that utilize asset-backed tokens to mitigate downside exposures.
       </div>
       <div className="section-container">
         At <span>{(props.fundname)}</span>, our mission is to provide investors with access to this new asset class, safety, security, and exceptional returns. We focus on five classes of cryptoassets that can be broadly classified as infrastructure protocols.
       </div>
 
       <div className="section-container">
-        <h3> We invest in cryptoassets and blockchain technologies including: </h3>
+        <h3> We invest in blockchain technologies including: </h3>
 
         <div className="section-container">
         <b>Cryptocurrencies, with strong value preserving properties. </b>
