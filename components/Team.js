@@ -15,41 +15,106 @@ const Team = (props) => {
     }
   }
 }
+const imgDir = './static/'
 
 const EnglishTeam = () => (
   <div className='thesis'>
 
     <h2>Managing Partners</h2>
 
-    <p>
-    <b>Hanieh Sadat | General Partner</b>
+    <div className='section-container'>
+      <div className="flex-profile">
+        <div className="flex-profle-inner">
+          <img className='profile-pic' src={imgDir + "profilepic-hanieh.png"} />
+        </div>
+        <div className="flex-profile-inner">
+          <div>
+            <b style={{ color: 'RGB(150, 97, 107)' }}>Hanieh Sadat</b>
+            <div style={{ color: '#888' }}>General Partner</div>
+            <div className="profile-email">hanieh@genesys.one</div>
+          </div>
+        </div>
+      </div>
+      <div className='profile-p'>
+        Hanieh Sadat is the former VP of Morgan Stanley, Private Wealth Management. She has been trading traditional assets and managing portfolios for select group of family offices and institutions since 2006. She is the founder of ImpactX – a token generation event advisory firm for impact projects and securing TGE (token generation event) deals for international investors in the past year. Hanieh drives the fund’s capital raising, deal flow, networking, strategic partnerships, and more.
+      </div>
+    </div>
+
+    <div className='section-container'>
+      <div className="flex-profile">
+        <div className="flex-profle-inner">
+          <img className='profile-pic' src={imgDir + "profilepic-peita.png"} />
+        </div>
+        <div className="flex-profile-inner">
+          <div>
+            <b style={{ color: 'RGB(150, 97, 107)' }}>Dr. Peita Lin</b>
+            <div style={{ color: '#888' }}>General Partner</div>
+            <div className="profile-email">peita@genesys.one</div>
+          </div>
+        </div>
+      </div>
+      <div className='profile-p'>
+        Peita holds a PhD in financial economics, with a background in game theory, mechanism design, and computer science. He has worked as a software engineer with Amity and OB1 (OpenBazaar), a decentralized marketplace that uses cryptocurrencies. Peita drives the fund's investment decisions, manages internal software, and develops asset pricing models and research projects.
+        He has been using Bitcoin for payments of goods and services since 2012 and has been actively investing in cryptoassets including Ethereum, altcoins, and TGEs.
+      </div>
+    </div>
+
+
     <br/>
-      Hanieh Sadat is the former VP of Morgan Stanley, Private Wealth Management. She has been trading traditional assets and managing portfolios for select group of family offices and institutions since 2006. She is the founder of ImpactX – a token generation event advisory firm for impact projects and securing TGE (token generation event) deals for international investors in the past year. Hanieh drives the fund’s capital raising, deal flow, networking, strategic partnerships, and more.
-    </p>
+    <h2>Advisors</h2>
 
-    <p>
-    <b>Dr. Peita Lin | General Partner</b>
-    <br/>
-    Peita holds a PhD in financial economics, with a background in game theory, mechanism design, and computer science. He has worked as a software engineer with Amity and OB1 (OpenBazaar), a decentralized marketplace that uses cryptocurrencies. Peita drives the fund's investment decisions, manages internal software, and develops asset pricing models and research projects.
-    He has been using Bitcoin for payments of goods and services since 2012 and has been actively investing in cryptoassets including Ethereum, altcoins, and TGEs.
-    </p>
+    <div className='section-container'>
+      <div className="flex-profile">
+        <div className="flex-profle-inner">
+          <img className='profile-pic-advisor' src={imgDir + "profilepic-jeff.png"} />
+        </div>
+        <div className="flex-profile-inner">
+          <div>
+            <b style={{ color: 'RGB(150, 97, 107)' }}>Jeff Wernick</b>
+            <div style={{ color: '#888' }}>Advisor</div>
+          </div>
+        </div>
+      </div>
+      <div className='profile-p'>
+        Jeffery started his career trading options and futures on the CBOC, CBOT and the CME. After working at Salomon Brothers and later the National Bank of Detroit in quantitative research, he founded AVI Portfolio Services Company, Inc. which specialized in risk management in exotic derivative products, which was sold in 1984. He has since been investing in a variety of asset classes, including distressed companies, seed capital, derivatives, structured financial products, lending platforms, biomedical, human genome project, blockchain, and bitcoin.
+      </div>
+    </div>
 
 
-    {/* <br/> */}
-    {/* <h2>Advisors</h2> */}
-    {/*  */}
-    {/* <p> */}
-    {/* <b>Johnny Cheng | Advisor</b> */}
-    {/* <br/> */}
-    {/* Johnny Cheng is the co-founder of Amity, an interactive messaging startup backed by Facebook's former Head of Mobile and the creator of Google Maps. Johnny specializes in analyzing the commercial viability of new platforms and technologies, as well as evaluating founders, teams, and communities. */}
-    {/* </p> */}
-    {/*  */}
-    {/* <p> */}
-    {/* <b>Dr. Washington Sanchez | Advisor</b> */}
-    {/* <br/> */}
-    {/* Washington Sanchez is the co-founder of OB1 and an early pioneer in Bitcoin. Backed by Andreessen Horowitz and Union Square Ventures, his team is leading the development of OpenBazaar — the world’s first widely-used decentralized marketplace that uses cryptocurrencies. Washington helps GenesysOne with technical analyses of emerging technologies, protocols, token models, and industry trends. */}
-    {/* </p> */}
-    {/*  */}
+    <div className='section-container'>
+      <div className="flex-profile">
+        <div className="flex-profle-inner">
+          <img className='profile-pic-advisor' src={imgDir + "profilepic-johnny.png"} />
+        </div>
+        <div className="flex-profile-inner">
+          <div>
+            <b style={{ color: 'RGB(150, 97, 107)' }}>Johnny Cheng</b>
+            <div style={{ color: '#888' }}>Advisor</div>
+          </div>
+        </div>
+      </div>
+      <div className='profile-p'>
+        Johnny Cheng is the co-founder of Amity, an interactive messaging platform backed by renowned investors in Silicon Valley and New York. Johnny specializes in analyzing the commercial viability of new platforms and technologies, as well as evaluating founders, teams, and communities.
+      </div>
+    </div>
+
+    <div className='section-container'>
+      <div className="flex-profile">
+        <div className="flex-profle-inner">
+          <img className='profile-pic-advisor' src={imgDir + "profilepic-washo.png"} />
+        </div>
+        <div className="flex-profile-inner">
+          <div>
+            <b style={{ color: 'RGB(150, 97, 107)' }}>Washington Sanchez</b>
+            <div style={{ color: '#888' }}>Advisor</div>
+          </div>
+        </div>
+      </div>
+      <div className='profile-p'>
+        Washington Sanchez is the co-founder of OB1 and an early pioneer in Bitcoin. Backed by Andreessen Horowitz and Union Square Ventures, his team is leading the development of OpenBazaar — the world’s first widely-used decentralized marketplace that uses cryptocurrencies. Washington helps GenesysOne with technical analyses of emerging technologies, protocols, token models, and industry trends.
+      </div>
+    </div>
+
   </div>
 )
 
@@ -73,6 +138,13 @@ Peita拥有金融经济学博士学位，在博弈论，机制设计和计算机
 
     <br/>
     <h2>顾问</h2>
+
+    <p>
+    <b> Jeffrey Wernick | Advisor</b>
+    <br/>
+Jeffery在大学期间开始了他在CBOC，CBOT和CME的职业生涯期权和期货交易。 在所罗门兄弟公司和后来的底特律国家银行担任高级职位的定量研究，资本交易，风险管理和贷款定价工作之后，他经营了自己的公司AVI投资组合服务有限公司，专门从事风险管理和量身定制的衍生品 这些产品于1984年被出售给多元化经济利益最大的保险公司。 此后，他一直在投资各种资产类别，包括陷入困境的破产公司，种子资本，天使投资，风险投资，房地产，货币，商品，采矿，各种形式的衍生品和结构性金融产品，分享经济，贷款平台 ，比特币，区块链，生物医学，人类基因组计划和支付系统。
+    </p>
+
 
     <p>
     <b>郑约翰 | 顾问</b>
@@ -109,6 +181,13 @@ const RussianTeam = () => (
 
     <br/>
     <h2>консультанты</h2>
+
+    <p>
+    <b> Jeffrey Wernick | Advisor</b>
+    <br/>
+Джеффри начал свою карьеру торговых опций и фьючерсов на CBOC, CBOT и CME, будучи студентом колледжа. После работы в Salomon Brothers, а затем в Национальном банке Детройта на руководящих должностях для количественных исследований, торговли капиталом, управления рисками и ценообразования с кредитами, он управлял своей собственной компанией AVI Portfolio Services Company, Inc., которая специализировалась на управлении рисками в специализированной и экзотической производной продукты, которые были проданы в 1984 году крупнейшей страховой компании по диверсифицированным финансовым интересам. С тех пор он инвестировал в различные классы активов, в том числе проблемные и обанкротившиеся компании, начальный капитал, инвестиции в ангелы, венчурный капитал, недвижимость, валюты, товары, добычу полезных ископаемых, все формы деривативов и структурированные финансовые продукты, совместное использование экономики, кредитные платформы , биткойн, блокчейн, биомедицинский, проект генома человека и платежные системы.
+    </p>
+
 
     <p>
     <b>Джонни Ченг | советник</b>

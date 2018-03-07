@@ -3,6 +3,25 @@ import React from 'react'
 // import throttle from 'lodash/throttle'
 import { throttle } from 'lodash'
 
+
+const getBrowser = () => {
+  var sBrowser, sUsrAg = navigator.userAgent;
+  if(sUsrAg.indexOf("Chrome") > -1) {
+      sBrowser = "Google Chrome";
+  } else if (sUsrAg.indexOf("Safari") > -1) {
+      sBrowser = "Apple Safari";
+  } else if (sUsrAg.indexOf("Opera") > -1) {
+      sBrowser = "Opera";
+  } else if (sUsrAg.indexOf("Firefox") > -1) {
+      sBrowser = "Mozilla Firefox";
+  } else if (sUsrAg.indexOf("MSIE") > -1) {
+      sBrowser = "Microsoft Internet Explorer";
+  }
+  return sBrowser
+}
+
+
+
 class Parallax extends React.Component {
 
   constructor(props) {
@@ -20,7 +39,25 @@ class Parallax extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', throttle(this.handleScroll, 32))
+    if (getBrowser() === "Mozilla Firefox") {
+      console.info("Firefox detected, disabling parallax.")
+      // // transitionDuration bugs on Firefox, must be 0ms
+      // window.addEventListener('scroll', throttle(this.handleScroll, 200))
+      // let htmlCollectionMountains = document.getElementsByClassName('mountain')
+      // Array.prototype.forEach.call(htmlCollectionMountains, (el, i) => {
+      //   el.style.transitionDuration = '200ms'
+      // });
+      // document.getElementsByClassName('main-title')[0].style.transitionDuration = '200ms'
+
+    } else {
+      window.addEventListener('scroll', throttle(this.handleScroll, 32))
+      let htmlCollectionMountains = document.getElementsByClassName('mountain')
+      Array.prototype.forEach.call(htmlCollectionMountains, (el, i) => {
+        el.style.transitionDuration = '96ms'
+      });
+      document.getElementsByClassName('main-title')[0].style.transitionDuration = '96ms'
+    }
+
     window.addEventListener('resize', this.handleResize)
     this.handleResize()
     this.setState({
@@ -95,8 +132,6 @@ class Parallax extends React.Component {
         mount4.style.transform = `translate3d(0, ${scrollTop/1.6}px, 0)`
         mount3.style.transform = `translate3d(0, ${scrollTop/2.3}px, 0)`
         mount2.style.transform = `translate3d(0, ${scrollTop/3.8}px, 0)`
-        // document.getElementById('parallaxBox1').style.filter = `grayscale(${1 - scrollTop/window.innerHeight})`
-        // mount1.style.transform = `translate3d(0, ${scrollTop/5.4}px, 0)`
     }
     // navbar fixed after scrolling down 100vh
     if ( scrollTop > window.innerHeight ) {
@@ -109,7 +144,7 @@ class Parallax extends React.Component {
   render() {
     const imgDir = this.props.staticDir + 'img/'
     return (
-      <div className="parallax" id="parallaxBox1" style={{ filter: 'grayscale(1)' }}>
+      <div className="parallax" id="parallaxBox1">
         {/* <img id="mount7" className='mountain' src={imgDir + "mount7.svg"}/> */}
         <img id="mount6" className='mountain' src={imgDir + "mount6.svg"}/>
         {/* <img id="mount5" className='mountain' src={imgDir + "mount5.svg"}/> */}

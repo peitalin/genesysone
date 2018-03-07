@@ -20,55 +20,85 @@ const Thesis = (props) => {
 const EnglishThesis = () => {
   return (
     <div className='thesis'>
-      <h2>Investment Thesis</h2>
-      <h3> We look for opportunities that have:</h3>
-      <p>
-      <b>Scale of the vision.</b> Does the price have the potential to grow exponentially? Will its demand, transaction volume, and usage in the mainstream increase consistently over-time?
-      </p>
 
-      <p>
-      <b>Strong teams.</b> Are the founders mission-driven? Do they have exceptional product vision, technical abilities, proven track records, ethics, and the ability to execute? Are the teams united, calculated, high-performing, and willing to walk through walls to succeed?
-      </p>
+      <div className="section-container">
+        <h3>We seek investment in technologies that have...</h3>
 
-      <p>
-      <b>Fundamental technology.</b> Based on new and innovative cryptoeconomic mechanisms, whether it be new data structures or new economic incentives.
-      </p>
+        <div className="section-container">
+          <b>Scale of the vision.</b> Does the protocol target intrinsic and pervasive human needs to communicate, transact or interact with one another? Is the protocol a building block in other platforms that have broad market scope?
+          <br/>
+        </div>
 
-      <p>
-      <b>Unfair advantages.</b> Do they have proprietary technologies, information advantages, exceptional teams and advisors, first-mover advantages, or exclusive partnerships?
-      </p>
+        <div className="section-container">
+          <b> Fundamental technology. </b> Based on new and innovative cryptoeconomic mechanisms, whether it be new data structures, new cryptographic primitives, or new economic incentive mechanisms.
+          <br/>
+        </div>
 
-      <p>
-      <b>Active community.</b> Do they have a strong community of evangelists, customers or developers?
-      </p>
+        <div className="section-container">
+          <b>New market potential.  </b>
+          Are they creating a new category or new marketplace at the right time?
+          <br/>
+        </div>
 
-      <p>
-      <b>Simplicity in their mission, technology, and message.</b> Is it clear and compelling to followers?
-      </p>
+        <div className="section-container">
+          <b>Endurance.</b>
+          Will the network grow over time in a sustainable way? Will the platform create network effects that enable defensibility and sustainable economic moats as it grows?
+          <br/>
+        </div>
 
-      <p>
-      <b>New market potential.</b> Are they creating a new category or new marketplace, at the right time?
-      </p>
+        <div className="section-container">
+          <b>Meaningful token models. </b>
+          Is the token crucial to how the protocol functions? Do the tokens help coordinate network participants and incentivize socially beneficial behaviours?
+          <br/>
+        </div>
 
-      <p>
-      <b>The next wave.</b> We’re looking for stealth and early-stage projects that will be at the forefront of upcoming trends in the cryptoasset space.
-      </p>
+        <div className="section-container">
+          <b>Open and active communities. </b>
+            Do they have a strong community of developers? Can they attract a community of evangelists?
+          <br/>
+        </div>
 
-      <p>
-      <b>Tokens.</b> Is it crucial to how the protocol works? Tokens should be linked to incentives, rather than just a bolt-on business model or means to raise funds.
-      </p>
+      </div>
 
-      <p>
-      <b>Endurance.</b> Will it be able to grow over-time in a sustainable way? Will the platform create network effects that enable defensibility and sustainable economic moats as it grows?
-      </p>
 
-      <p>
-      <b>Ambitious roadmaps</b> that are achievable. Does their roadmap convey a clear path to growth? Do we believe they can consistently overdeliver?
-      </p>
+      <div className="section-container">
+        <h3>We look for teams that...</h3>
 
-      <p>
-      <b>Early-stage.</b> We take a contrarian-view on cryptoasset investment opportunities and look for undervalued investments that the mainstream are not aware of, or are not interested in, yet.
-      </p>
+        <div className="section-container">
+          <b> Have a simple and compelling mission.  </b>
+          Are the founders mission-driven? Is the purpose clear and compelling to followers? Are the teams united and willing to walk through walls to succeed?
+          <br/>
+        </div>
+
+        <div className="section-container">
+          <b>Have a fixation on the future. </b>
+          Founders who are obsessed with what comes next are founders that do not sidestep hard problems. Do the founders have unwavering focus? Do they have exceptional product vision, ethics, and ability to execute?
+          <br/>
+        </div>
+
+        <div className="section-container">
+          <b>Focus on pragmatism, over idealism. </b>
+          Do the founders embrace reality and plan sensible roadmaps? Can they make distinctions between real and illusory trends?
+          <br/>
+        </div>
+
+        <div className="section-container">
+          <b>Embrace critique and disagreements. </b>
+          Do the founders have the humility to seek rational dissenting opinions to improve their thought processes? Enduring founders are ones who are curious, not proud.
+          <br/>
+        </div>
+
+        <div className="section-container">
+          <b>Have domain specific expertise. </b>
+          Does the project operate in a space that requires domain specific expertise, and does the founder have extensive backgrounds in the relevant field?
+          <br/>
+        </div>
+
+      </div>
+
+
+
+
     </div>
   )
 }
