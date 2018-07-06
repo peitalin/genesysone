@@ -9,7 +9,7 @@ const FUNDNAME = 'GenesysOne'
 
 const Header = (props) => (
   <Head>
-    <title>{( FUNDNAME +  " Capital | Cryptoasset Investments")}</title>
+    <title>{( FUNDNAME +  " Capital | Digital Asset Investments")}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
     {/* <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet" /> */}
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" />
@@ -36,9 +36,12 @@ const Header = (props) => (
 )
 
 const Logo = (props) => (
-  <div className="main-title" id='main-title'>
-    <h1>{( FUNDNAME + " " + "Capital" )}</h1>
-    <div className="main-title-sub">&mdash; Investing in Blockchain & Cryptoasset Frontiers &mdash;</div>
+  <div>
+    <div className="main-title" id='main-title'>
+      <h1>{( FUNDNAME + " " + "Capital" )}</h1>
+      <div className="main-title-sub">&mdash; Investing in Blockchain and Digital Asset Frontiers &mdash;</div>
+      {/* <img id="g1-logo" className='logo' src={"./static/genesys-logo.png"}/> */}
+    </div>
   </div>
 )
 
@@ -46,10 +49,11 @@ const Layout = (props) => (
   <div>
     <Header/>
     <style jsx global>{StyleString}</style>
-    <Parallax staticDir={STATIC_DIR}/>
-    <Logo/>
-    <Mountain1 id="mount1" fill={"#fafafa"} />
-    <div className="white-fill"></div>
+    {/* <Parallax staticDir={STATIC_DIR}/> */}
+    {/* <Logo/> */}
+
+    {/* <Mountain1 id="mount1" fill={"#aaaaaa"} /> */}
+    {/* <div className="white-fill"></div> */}
     { props.children }
   </div>
 )
@@ -57,36 +61,36 @@ const Layout = (props) => (
 const StyleString = `
 body {
   overflow-x: hidden;
-  font-family: Helvetica, Cousine, Inconsolata;
+  font-family: Helvetica, Helvetica Neue, Arial, Cousine, Inconsolata;
   font-size: 12pt;
   line-height: 1.4rem;
   width: 100vw;
   margin: 0px;
   padding: 0px;
-  color: #222;
+  color: #26314A;
   background-color: #fafafa;
   -webkit-tap-highlight-color: #ddd;
 }
-h1 {
-  font-size: 2.6rem;
-  font-weight: 400;
-  font-family: Lobster;
-  text-align: center;
-  color: #222;
-  margin: 0;
-}
-h2 {
-  font-size: 1.6rem;
-  txt-align: center;
-  margin: 0;
-}
-h2 {
-  font-size: 1.4rem;
-  margin: 0;
-}
-h3 {
-  margin-bottom: 0px;
-}
+// h1 {
+//   font-size: 2.6rem;
+//   font-weight: 400;
+//   font-family: Lobster, Times;
+//   text-align: center;
+//   color: #222;
+//   margin: 0;
+// }
+// h2 {
+//   font-size: 1.6rem;
+//   txt-align: center;
+//   margin: 0;
+// }
+// h2 {
+//   font-size: 1.4rem;
+//   margin: 0;
+// }
+// h3 {
+//   margin-bottom: 0px;
+// }
 ul {
   padding: 0;
   margin: 0;
@@ -108,6 +112,9 @@ a.highlighted {
   color: RGB(209, 123, 136);
 }
 
+#g1-logo {
+  width: 50px;
+}
 
 .parallax {
   background-repeat: no-repeat no-repeat;
@@ -135,13 +142,14 @@ a.highlighted {
   left: -1px;
   bottom: 0%;
   font-size: 1em;
-  transition-duration: 64ms;
+  transition-duration: 48ms;
   transition-timing-function: ease;
   -webkit-animation: fadeInParallax 0.3s ease-in;
   animation: fadeInParallax 0.3s ease-in;
 }
 #mount1 {
   bottom: -10%;
+  z-index: 2;
   -webkit-animation: fadeInParallax 0s ease-in;
   animation: fadeInParallax 0s ease-in;
 }
@@ -164,7 +172,7 @@ a.highlighted {
   justify-content: center;
   align-items: center;
   color: #222;
-  transition-duration: 64ms;
+  transition-duration: 48ms;
   transition-timing-function: ease;
 }
 .main-title-sub {
@@ -276,12 +284,17 @@ a.highlighted {
   position: absolute;
   width: 100vw;
 }
+.team-header {
+  margin-top: 8%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #37505C;
+}
 .thesis {
-  margin: 0% 10% 0% 10%;
+  margin: 0;
   overflow-x: hidden;
-  padding: 5%;
+  background-color: #fafafa;
+  padding: 5% 0% 5% 10%;
   text-align: justify;
-  max-width: 640px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,6 +393,7 @@ a.highlighted {
   width: 100vw;
 }
 .social-container {
+  padding: 5px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -392,7 +406,7 @@ a.highlighted {
   padding: 20px 20px 10px 20px;
 }
 .social-icon {
-  filter: grayscale(.5);
+  filter: grayscale(1);
   transition: all 0.3s ease;
   height: 40px;
   width: 40px;
@@ -406,17 +420,18 @@ a.highlighted {
   padding: 15px;
   text-align: center;
   font-size: 0.8em;
-  color: #aaa;
-  background-color: #f1f1f1;
+  color: #37505C;
+  background-color: #5F8CDC;
 }
 .profile-pic {
-  filter: grayscale(0.8);
+  margin-left: 3px;
+  filter: grayscale(0.4);
   height: 110px;
   transition: transform 200ms;
 }
 .profile-pic:hover {
   transform: scale(1.2);
-  filter: grayscale(0.4);
+  // filter: grayscale(0.4);
   transition: all 200ms;
 }
 .profile-pic-advisor {
@@ -432,8 +447,10 @@ a.highlighted {
   text-align: justify;
 }
 .section-container {
+  max-width: 720px;
   margin-bottom: 2%;
   margin-top: 2%;
+  padding-right: 10%;
 }
 .flex-profile {
   display: flex;
@@ -456,13 +473,229 @@ a.highlighted {
   margin-left: 0%;
   padding-left: calc(2% - 4px);
   padding-right: 10%;
-  border-left: 4px solid #96616B;
+  border-left: 4px solid #f8f8fa;
 }
 .flex-item {
   flex-grow: 1;
   flex-basis: 30%;
   flex-basis: 300px;
 }
+
+/////////////////////////// LANDING //////////////////////////
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  touch-action: pan-y;
+  /* Disable pull-down refresh, let mapbox handle panning*/
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: #eee;
+  display: block;
+  line-height: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-margin-before: 0rem;
+  -webkit-margin-after: 0.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #74c3f5;
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  font-weight: 500;
+  color: #26314A;
+  line-height: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.psmall {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.65);
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+}
+.hero-container {
+  background-color: #5F8CDC;
+  -webkit-animation: slideAnim 1s cubic-bezier(0.7, 0, 0.2, 1) both;
+  animation: slideAnim 1s cubic-bezier(0.7, 0, 0.2, 1) both;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.hero-container .landing-page-header-container .landing-page-header div:first-child {
+  -webkit-animation: slideAnim 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+  animation: slideAnim 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.hero-container .landing-page-header-container .landing-page-header div:nth-child(2) {
+  -webkit-animation: slideAnim 0.9s cubic-bezier(0.7, 0, 0.3, 1) both;
+  animation: slideAnim 0.9s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.hero-container .landing-page-header-container .landing-page-header div:nth-child(3) {
+  -webkit-animation: slideAnim 0.8s cubic-bezier(0.7, 0, 0.3, 1) both;
+  animation: slideAnim 0.8s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.background-color-slider {
+  // background-color: #96616b;
+  // background-color: #5F8CDC;
+  background-color: #64A3E5;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: slideAnim 0.8s cubic-bezier(0.7, 0, 0.3, 1) both;
+  animation: slideAnim 0.8s cubic-bezier(0.7, 0, 0.3, 1) both;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+@keyframes slideAnim {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(-80%, 0, 0);
+    transform: translate3d(-80%, 0, 0);
+  }
+}
+.landing-page-header-container {
+  height: 100vh;
+}
+.landing-page-header {
+  padding-top: 60vh;
+  margin-left: 10%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+.landing-page-sub-header {
+  margin-left: 8%;
+  padding-left: calc(2% - 4px);
+  padding-right: 10%;
+  padding-bottom: 4px;
+  border-left: 4px solid #eaeaea;
+  max-width: 800px;
+}
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .landing-page-header {
+    padding-top: 55vh;
+    padding-bottom: 0.5rem;
+  }
+  .landing-page-sub-header {
+    margin-left: 8%;
+    padding-left: 2%;
+    padding-right: 10%;
+    padding-bottom: 4px;
+    border-left: 4px solid #eaeaea;
+    max-width: 800px;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    h1 {
+      font-size: 2.2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+
+  .landing-page-header {
+    padding-top: 40vh;
+    padding-bottom: 0.5rem;
+  }
+  .landing-page-sub-header {
+    margin-left: 8%;
+    padding-left: calc(2% - 4px);
+    padding-right: 10%;
+    padding-bottom: 4px;
+    border-left: 4px solid #eaeaea;
+    max-width: 800px;
+  }
+
+}
+.landing-page-sub-header h3 {
+  line-height: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  /* adds to 2rem */
+}
+.landing-languages {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: calc(100vh - 95vh);
+  animation: fadeInLanguages 1s cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 0.5s;
+}
+.landing-languages .languages {
+  margin: 0.2rem;
+}
+.landing-languages .languages a {
+  color: #eaeaea;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.landing-languages .languages a:hover {
+  color: #90E0F3;
+}
+@keyframes fadeInLanguages {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+}
+.landing-header-fade-appear {
+  opacity: 0.01;
+}
+.landing-header-fade-appear.landing-header-fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.landing-header-fade-enter {
+  opacity: 0.01;
+}
+.landing-header-fade-enter.landing-header-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.landing-header-fade-leave {
+  opacity: 1;
+}
+.landing-header-fade-leave.landing-header-fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
 `
+
 
 export default Layout

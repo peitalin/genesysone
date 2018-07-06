@@ -133,12 +133,12 @@ class Parallax extends React.Component {
         mount3.style.transform = `translate3d(0, ${scrollTop/2.3}px, 0)`
         mount2.style.transform = `translate3d(0, ${scrollTop/3.8}px, 0)`
     }
-    // navbar fixed after scrolling down 100vh
-    if ( scrollTop > window.innerHeight ) {
-      document.getElementById('navbar-fixed').style.transform = `translate3d(0, 0, 0)`
-    } else {
-      document.getElementById('navbar-fixed').style.transform = `translate3d(0, -80px, 0)`
-    }
+    // // navbar fixed after scrolling down 100vh
+    // if ( scrollTop > window.innerHeight ) {
+    //   document.getElementById('navbar-fixed').style.transform = `translate3d(0, 0, 0)`
+    // } else {
+    //   document.getElementById('navbar-fixed').style.transform = `translate3d(0, -80px, 0)`
+    // }
   }
 
   render() {
