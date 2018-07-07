@@ -14,32 +14,12 @@ class Index extends React.Component {
 
   state = {
     page: 'home',
-    language: 'english',
+    language: 'default',
     fundname: 'GenesysOne'
   }
 
-  renderNavbar = ( navbarType ) => {
-    const navBottomBorder = (navbarType == 'fixed') ? { borderBottom: 'none' } : {}
-    return (
-      <nav className='navbar' style={navBottomBorder}>
-        <div className='nav-inside'>
-          <ul>
-            <a className={classNames({ highlighted: this.state.page=='home' })}
-              onClick={() => this.setState({ page: 'home' })}>
-              Home
-            </a>
-            <a className={classNames({ highlighted: this.state.page=='thesis' })}
-              onClick={() => this.setState({ page: 'thesis' })}>
-              Thesis
-            </a>
-            <a className={classNames({ highlighted: this.state.page=='team' })}
-              onClick={() => this.setState({ page: 'team' })}>
-              Team
-            </a>
-          </ul>
-        </div>
-      </nav>
-    )
+  handleClick = (language) => {
+    this.setState({ language: language })
   }
 
   landingLanguages = (language) => {
@@ -47,9 +27,9 @@ class Index extends React.Component {
       <div className='landing-languages'>
         <p className={classNames({
           'languages': true,
-          'selected-language': language == 'english'
+          'selected-language': language == 'english' || language == 'default'
           })}
-          onClick={() => this.setState({ language: 'english' })}
+          onClick={() => this.handleClick("english")}
         >
           <a>English</a>
         </p>
@@ -58,7 +38,7 @@ class Index extends React.Component {
           'languages': true,
           'selected-language': language == 'chinese'
           })}
-          onClick={() => this.setState({ language: 'chinese' })}
+          onClick={() => this.handleClick("chinese")}
         >
           <a>中文</a>
         </p>
@@ -67,7 +47,7 @@ class Index extends React.Component {
           'languages': true,
           'selected-language': language == 'russian'
           })}
-          onClick={() => this.setState({ language: 'russian' })}
+          onClick={() => this.handleClick("russian")}
         >
           <a>Русский</a>
         </p>
@@ -80,11 +60,6 @@ class Index extends React.Component {
       <Layout>
         <div>
           {this.landingLanguages(this.state.language)}
-          {/* <div className='navbar-fixed-container' id='navbar-fixed'> */}
-          {/*   {this.renderNavbar('fixed')} */}
-          {/* </div> */}
-          {/* {this.renderNavbar('static')} */}
-
           <div className='landing-page'>
             <div className='background-color-slider'></div>
             <div className='hero-container'>
@@ -93,10 +68,6 @@ class Index extends React.Component {
             <Team language={this.state.language}/>
             <Footer/>
           </div>
-          {/* <div className="section1"> */}
-            {/* <RenderPage page={this.state.page} fundname={this.state.fundname} language={this.state.language}/> */}
-            {/* <Philosophy fundname={this.state.fundname} language={this.state.language}/> */}
-          {/* </div> */}
         </div>
       </Layout>
     )
@@ -110,7 +81,7 @@ const switchLanguageHeader = (language) => {
     case 'chinese': {
       return (
         <div className='landing-page-header-container' key='ch'>
-          <div className='landing-page-header'>
+          <div className='landing-page-header landing-page-header-anim'>
             <div> <h1>GenesysOne Capital</h1> </div>
             <div> <h2>投资数字资产。</h2> </div>
             <div> <h2>Blockchain。分散的基础设施。</h2> </div>
@@ -127,7 +98,7 @@ const switchLanguageHeader = (language) => {
     case 'russian': {
       return (
         <div className='landing-page-header-container' key='ru'>
-          <div className='landing-page-header'>
+          <div className='landing-page-header landing-page-header-anim'>
             <div> <h1>GenesysOne Capital</h1> </div>
             <div> <h2>Инвестирование в цифровые активы.</h2> </div>
             <div> <h2>Blockchain. Децентрализованная инфраструктура.</h2> </div>
@@ -141,9 +112,27 @@ const switchLanguageHeader = (language) => {
         </div>
       )
     }
-    default: {
+    case "english": {
+      // duplicate "english case so border animation doesn't trigger on page-load"
       return (
         <div className='landing-page-header-container' key='en'>
+          <div className='landing-page-header landing-page-header-anim'>
+            <div> <h1>GenesysOne Capital</h1> </div>
+            <div> <h2>Investing in Digital Assets.</h2> </div>
+            <div> <h2>Blockchain. Decentralized Infrastructures.</h2> </div>
+          </div>
+          <div className='landing-page-sub-header'>
+            <h3>GenesysOne are patient, long-term investors.</h3>
+            <p className="psmall">
+            We invest in decentralized infrastructures and marketplaces with strong network effects. <br/>Built by thoughtful, mission-driven founders.<br/>Governed by communities of developers and evangelists.
+            </p>
+          </div>
+        </div>
+      )
+    }
+    default: {
+      return (
+        <div className='landing-page-header-container' key='default'>
           <div className='landing-page-header'>
             <div> <h1>GenesysOne Capital</h1> </div>
             <div> <h2>Investing in Digital Assets.</h2> </div>
