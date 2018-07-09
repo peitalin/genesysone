@@ -94,7 +94,10 @@ a.highlighted {
 .team-header {
   margin-top: 8%;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #37505C;
+  border-bottom: 2px solid #5682A3;
+}
+.team-header h1 {
+  color:#5682A3;
 }
 .team-header *:nth-child(1) {
   animation: fadeIn 1s cubic-bezier(0.6, 0.2, 0.4, 1.1) both;
@@ -171,11 +174,12 @@ a.highlighted {
   filter: grayscale(0.4);
   height: 110px;
   transition: transform 200ms;
+  border-radius: 80px;
 }
 .profile-pic:hover {
-  transform: scale(1.2);
+  // transform: scale(1.2);
   // filter: grayscale(0.4);
-  transition: all 200ms;
+  // transition: all 200ms;
 }
 .profile-pic-advisor {
   filter: grayscale(1);
@@ -190,12 +194,20 @@ a.highlighted {
   text-align: justify;
 }
 .section-container {
+  color:#5682A3;
   max-width: 720px;
   margin-bottom: 2%;
   margin-top: 2%;
-  padding-right: 10%;
+  padding: 2%;
+  margin-right: 10%;
+  // border-left: 4px solid #fff;
+  // background-color: #fdfdfd;
+}
+.section-container h3 {
+  color:#5682A3;
 }
 .flex-profile {
+  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -496,7 +508,20 @@ h3 {
   animation: fadeIn 0.45s cubic-bezier(0.6, 0.2, 0.4, 1.1) both;
   animation-delay: 0.45s;
 }
-
+.person-card__link {
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+.person-card__link:hover {
+  transform: scale(1.2);
+  transition: all 200ms;
+}
 `
 
 

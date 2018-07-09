@@ -18,23 +18,41 @@ const Team = (props) => {
 const imgDir = './static/'
 
 
+
+const ProfilePic = (props) => {
+  return (
+    <div className="person-card__link">
+      <a href={props.href} target="_blank">
+        <svg width="34" height="34">
+          <svg id="icon-in" viewBox="0 0 34 34" width="100%" height="100%"><g transform="translate(5 5)" fill="none" fillRule="evenodd"><circle stroke="#fcfcfc" strokeWidth="2" fill="#2468E4" cx="12" cy="12" r="14.5"></circle><path d="M9 15.698a.311.311 0 0 1-.32.302H7.32a.311.311 0 0 1-.32-.302v-5.396c0-.167.143-.302.32-.302h1.36c.177 0 .32.135.32.302v5.396zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm9 6.68c0 .177-.127.32-.284.32h-1.41c-.158 0-.285-.143-.285-.32v-2.908c0-.434.113-1.901-1.007-1.901-.87 0-1.046 1.004-1.082 1.455v3.354c0 .177-.127.32-.284.32h-1.364c-.157 0-.284-.143-.284-.32V9.424c0-.177.127-.32.284-.32h1.364c.157 0 .284.143.284.32v.54c.323-.544.802-.964 1.822-.964C17.013 9 17 11.375 17 12.68v3z" fill="#FFF"></path></g></svg>
+        </svg>
+      </a>
+    </div>
+  )
+}
+
+// const lightH3color = "#74c3f5";
+const lightH3color = "#64A3E5";
+
+
 const EnglishTeam = () => (
   <div className='thesis'>
 
     <div className="team-header">
-      <h1 style={{ color: '#37505C' }}>Team</h1>
-      <h2>Managing Partners</h2>
+      <h1>Team</h1>
+      <h2 style={{ color: lightH3color }}>Managing Partners</h2>
     </div>
 
     <div className='section-container'>
       <div className="flex-profile">
-        <div className="flex-profle-inner">
-          <img style={{ height: 116 }} className='profile-pic' src={imgDir + "profilepic-hanieh.png"} />
+        <div className="flex-profle-inner" style={{ position: "absolute" }}>
+          <img className='profile-pic' style={{ height: 115 }} src={imgDir + "profilepic-hanieh.png"} />
+          <ProfilePic href="https://www.linkedin.com/in/hanieh-sadat-80891749/"/>
         </div>
-        <div className="flex-profile-inner">
+        <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
             <h3>Hanieh Sadat</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 300 }}>General Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 300 }}>General Partner</div>
             <div className="profile-email">hanieh@genesys.one</div>
           </div>
         </div>
@@ -46,13 +64,14 @@ const EnglishTeam = () => (
 
     <div className='section-container'>
       <div className="flex-profile">
-        <div className="flex-profle-inner">
+        <div className="flex-profle-inner" style={{ position: "absolute" }}>
           <img className='profile-pic' src={imgDir + "profilepic-peita.png"} />
+          <ProfilePic href="https://www.linkedin.com/in/peita-lin-37842875/"/>
         </div>
-        <div className="flex-profile-inner">
+        <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
             <h3>Peita Lin</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 300 }}>General Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 300 }}>General Partner</div>
             <div className="profile-email">peita@genesys.one</div>
           </div>
         </div>
@@ -80,7 +99,7 @@ const EnglishTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Jeff Wernick</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Advisor</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
           </div>
         </div>
       </div>
@@ -98,7 +117,7 @@ const EnglishTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Dr. Washington Sanchez</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Advisor</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
           </div>
         </div>
       </div>
@@ -154,7 +173,7 @@ const EnglishTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Kenneth Jeon</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Strategic Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Strategic Partner</div>
           </div>
         </div>
       </div>
@@ -173,7 +192,7 @@ const ChineseTeam = () => (
     <div className="team-header">
       <div>
         <h1 style={{ color: '#37505C' }}>球队</h1>
-        <h2>管理伙伴</h2>
+        <h2 style={{ color: lightH3color }}>管理伙伴</h2>
       </div>
     </div>
 
@@ -185,7 +204,7 @@ const ChineseTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Hanieh Sadat</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 300 }}></div>
+            <div style={{ color: lightH3color, fontWeight: 300 }}>General Partner</div>
             <div className="profile-email">hanieh@genesys.one</div>
           </div>
         </div>
@@ -203,7 +222,7 @@ const ChineseTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Peita Lin</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 300 }}>General Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 300 }}>General Partner</div>
             <div className="profile-email">peita@genesys.one</div>
           </div>
         </div>
@@ -231,7 +250,7 @@ const ChineseTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Jeff Wernick</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Advisor</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
           </div>
         </div>
       </div>
@@ -249,7 +268,7 @@ Jeffery在CBOC，CBOT和CME开始了他的职业交易期权和期货交易。�
         <div className="flex-profile-inner">
           <div>
             <h3>Dr. Washington Sanchez</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Advisor</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
           </div>
         </div>
       </div>
@@ -285,7 +304,7 @@ Jeffery在CBOC，CBOT和CME开始了他的职业交易期权和期货交易。�
         <div className="flex-profile-inner">
           <div>
             <h3>Kenneth Jeon</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Strategic Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Strategic Partner</div>
           </div>
         </div>
       </div>
@@ -304,7 +323,7 @@ const RussianTeam = () => (
     <div className="team-header">
       <div>
         <h1 style={{ color: '#37505C' }}>команда</h1>
-        <h2>Управляющие партнеры</h2>
+        <h2 style={{ color: lightH3color }}>Управляющие партнеры</h2>
       </div>
     </div>
 
@@ -316,7 +335,7 @@ const RussianTeam = () => (
         <div className="flex-profile-inner">
           <div>
             <h3>Hanieh Sadat</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 300 }}>General Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 300 }}>General Partner</div>
             <div className="profile-email">hanieh@genesys.one</div>
           </div>
         </div>
@@ -334,7 +353,7 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
         <div className="flex-profile-inner">
           <div>
             <h3>Peita Lin</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 300 }}>General Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 300 }}>General Partner</div>
             <div className="profile-email">peita@genesys.one</div>
           </div>
         </div>
@@ -363,7 +382,7 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
         <div className="flex-profile-inner">
           <div>
             <h3>Jeff Wernick</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Advisor</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
           </div>
         </div>
       </div>
@@ -381,7 +400,7 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
         <div className="flex-profile-inner">
           <div>
             <h3>Dr. Washington Sanchez</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Advisor</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
           </div>
         </div>
       </div>
@@ -417,7 +436,7 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
         <div className="flex-profile-inner">
           <div>
             <h3>Kenneth Jeon</h3>
-            <div style={{ color: '#74C3F5', fontWeight: 200 }}>Strategic Partner</div>
+            <div style={{ color: lightH3color, fontWeight: 200 }}>Strategic Partner</div>
           </div>
         </div>
       </div>
