@@ -62,8 +62,10 @@ class Index extends React.Component {
           {this.landingLanguages(this.state.language)}
           <div className='landing-page'>
             <div className='background-color-slider'></div>
-            <div className='hero-container'>
-              { switchLanguageHeader(this.state.language) }
+            <div className="sliding-hero-container">
+              <div className='hero-container'>
+                { switchLanguageHeader(this.state.language) }
+              </div>
             </div>
             <Team language={this.state.language}/>
             <Footer/>

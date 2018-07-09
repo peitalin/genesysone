@@ -22,10 +22,8 @@ const EnglishTeam = () => (
   <div className='thesis'>
 
     <div className="team-header">
-      <div>
-        <h1 style={{ color: '#37505C' }}>Team</h1>
-        <h2>Managing Partners</h2>
-      </div>
+      <h1 style={{ color: '#37505C' }}>Team</h1>
+      <h2>Managing Partners</h2>
     </div>
 
     <div className='section-container'>
@@ -60,8 +58,8 @@ const EnglishTeam = () => (
         </div>
       </div>
       <div className=''>
-        Peita holds a PhD in financial economics, with a background in game theory, mechanism design, and computer science. He has worked as a software engineer with Amity and OB1 (OpenBazaar), a decentralized marketplace that uses cryptocurrencies. Peita drives the fund's investment decisions, manages internal software, and develops asset pricing models and research projects.
-        He has been using Bitcoin for payments of goods and services since 2012 and has been actively investing in cryptoassets including Ethereum, altcoins, and TGEs.
+        Peita holds a PhD in financial economics, specialising in game theory, mechanism design, and mathematical statistics. He has a background in computer science and began coding as a teenager. He was a software engineer with Amity and OB1 (OpenBazaar), a decentralized marketplace that uses cryptocurrencies. Peita drives investment decisions, manages internal software, and conducts research on portfolio companies.
+        He actively experiments with new digital asset use-cases, and has been using Bitcoin for payments since 2012, Dogecoin for tips, and MakerDAO for loans to stabilize and fund business expenses.
       </div>
     </div>
 
@@ -161,7 +159,7 @@ const EnglishTeam = () => (
         </div>
       </div>
       <div className=''>
-Kenneth is a software engineer at Accenture Consulting Group and has consulted for Fortune 100 company’s such as Berkshire Hathaway and AT&T. Kenneth holds Microsoft certification in Software & Data Development Expert. Kenneth involved in blockchain space since 2013, he has deep technical understanding in blockchain technology, extensive trading experience and market understanding. Kenneth is founder of Bitwin Investment Group. Kenneth speaks fluent Chinese and his strengths and focuses on due diligence, networking, and arbitrage.
+      Kenneth is the founder of Bitwin Investment Group, the USA Partner of Huobi Exchange. He was a software engineer at Accenture Consulting Group and has consulted for Fortune 100 companies such as Berkshire Hathaway and AT&T. Kenneth speaks fluent Chinese and focuses on GenesysOne business development opportunities in China.
       </div>
     </div>
 
@@ -211,8 +209,8 @@ const ChineseTeam = () => (
         </div>
       </div>
       <div className=''>
-        Peita拥有金融经济学博士学位，具有博弈论，机制设计和计​​算机科学的背景。他曾在Amity和OB1（OpenBazaar）担任软件工程师，这是一个使用加密货币的分散市场。 Peita推动基金的投资决策，管理内部软件，并开发资产定价模型和研究项目。
-        自2012年以来，他一直在使用比特币支付商品和服务，并一直积极投资包括以太坊，山寨币和ICO在内的加密设备。
+      Peita拥有金融经济学博士学位，专攻博弈论，机制设计和统计方法。 他拥有计算机科学的背景，并在十几岁时开始编码。 他是Amity和OB1（OpenBazaar）的软件工程师，这是一个使用加密货币的分散市场。 Peita推动投资决策，管理内部软件，并对投资组合协议进行研究。
+               他积极尝试新的数字资产使用案例，自2012年以来一直使用比特币进行支付，使用Dogecoin进行提示，使用MakerDAO进行贷款以稳定和支付业务费用。
       </div>
     </div>
 
@@ -273,7 +271,7 @@ Jeffery在CBOC，CBOT和CME开始了他的职业交易期权和期货交易。�
         </div>
       </div>
       <div className=''>
-创始董事长宝藏数据; BitFury董事会主席;主席Hut8。种子投资者Canva，Color Genomics，T​​weetdeck / Twitter，Wish.com和Zoom Video。自2009年以来参与比特币; Airswap和Powerledger的ICO，创造者Blockchain Summit以及“比特币采矿灯泡”的催化剂。
+创始董事长宝藏数据; BitFury董事会主席;主席Hut8。种子投资者Canva，Color Genomics，Tweetdeck/Twitter，Wish.com和Zoom Video。自2009年以来参与比特币; Airswap和Powerledger的ICO，创造者Blockchain Summit以及“比特币采矿灯泡”的催化剂。
       受过计算机芯片设计师教育，大学毕业后加入LSI Logic。台积电（纽约证券交易所代码：TSM）创业时发行的徽章＃A001随后在亚历克斯建立了半导体业务。 Brown＆Sons定位Atmel，Cirrus Logic，Dallas Semiconductor，Zilog的首次公开募股。
       </div>
     </div>
@@ -292,7 +290,7 @@ Jeffery在CBOC，CBOT和CME开始了他的职业交易期权和期货交易。�
         </div>
       </div>
       <div className=''>
-      Kenneth是埃森哲咨询集团的软件工程师，曾为Berkshire Hathaway和AT＆T等财富100强公司提供咨询服务。 Kenneth拥有软件和数据开发专家的Microsoft认证。 Kenneth自2013年开始参与区块链领域，他对区块链技术，广泛的交易经验和市场理解有深入的技术理解。 Kenneth是Bitwin投资集团的创始人。 Kenneth能说流利的中文和他的优点，专注于尽职调查，网络和套利。
+        Kenneth是Huobi Exchange美国合伙人Bitwin Investment Group的创始人。 他是埃森哲咨询集团的软件工程师，曾为伯克希尔哈撒韦公司和AT＆T公司等财富100强公司提供咨询服务。 Kenneth能说流利的中文，专注于GenesysOne在中国的业务发展机会。
       </div>
     </div>
 
@@ -342,8 +340,9 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
         </div>
       </div>
       <div className=''>
-      Пейт имеет степень PhD в области финансовой экономики, с опытом в теории игр, разработке механизмов и информатике. Он работал инженером-программистом с Amity и OB1 (OpenBazaar), децентрализованным рынком, использующим криптотермины. Peita управляет инвестиционными решениями фонда, управляет внутренним программным обеспечением и разрабатывает модели ценообразования активов и исследовательские проекты.
-        Он использует Биткойн для оплаты товаров и услуг с 2012 года и активно инвестирует в криптоанализ, включая Ethereum, Altcoins и ICOs.
+        Peita имеет степень PhD в области финансовой экономики, специализируясь на теории игр, разработке механизмов и статистических методах. Он имеет опыт работы в области информатики и начал кодирование в подростковом возрасте. Он был инженером-программистом с Amity и OB1 (OpenBazaar), децентрализованным рынком, использующим криптотермины. Peita управляет инвестиционными решениями, управляет внутренним программным обеспечением и проводит исследования по портфельным протоколам.
+                 Он активно экспериментирует с новыми вариантами использования цифровых активов и использует Биткойн для платежей с 2012 года, Dogecoin для советов и MakerDAO для займов для стабилизации и финансирования деловых расходов.
+
       </div>
     </div>
 
