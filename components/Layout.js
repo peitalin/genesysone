@@ -198,7 +198,7 @@ a.highlighted {
   max-width: 720px;
   margin-bottom: 2%;
   margin-top: 2%;
-  padding: 2%;
+  // padding: 2%;
   margin-right: 10%;
   // border-left: 4px solid #fff;
   // background-color: #fdfdfd;
