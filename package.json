@@ -4,10 +4,12 @@
     "export": "next export",
     "dev": "next",
     "start": "next start",
-    "generate": "next build; next export"
+    "generate": "next build; next export",
+    "start-prod": "next build && next export && node express.js"
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "express": "^4.16.4",
     "ismobilejs": "^0.4.1",
     "lodash": "^4.17.4",
     "next": "^4.2.2",

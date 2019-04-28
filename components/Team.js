@@ -24,7 +24,7 @@ const ProfilePic = (props) => {
     <div className="person-card__link">
       <a href={props.href} target="_blank">
         <svg width="34" height="34">
-          <svg id="icon-in" viewBox="0 0 34 34" width="100%" height="100%"><g transform="translate(5 5)" fill="none" fillRule="evenodd"><circle stroke="#fcfcfc" strokeWidth="2" fill="#2468E4" cx="12" cy="12" r="14.5"></circle><path d="M9 15.698a.311.311 0 0 1-.32.302H7.32a.311.311 0 0 1-.32-.302v-5.396c0-.167.143-.302.32-.302h1.36c.177 0 .32.135.32.302v5.396zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm9 6.68c0 .177-.127.32-.284.32h-1.41c-.158 0-.285-.143-.285-.32v-2.908c0-.434.113-1.901-1.007-1.901-.87 0-1.046 1.004-1.082 1.455v3.354c0 .177-.127.32-.284.32h-1.364c-.157 0-.284-.143-.284-.32V9.424c0-.177.127-.32.284-.32h1.364c.157 0 .284.143.284.32v.54c.323-.544.802-.964 1.822-.964C17.013 9 17 11.375 17 12.68v3z" fill="#FFF"></path></g></svg>
+          <svg id="icon-in" viewBox="0 0 34 34" width="100%" height="100%"><g transform="translate(5 5)" fill="none" fillRule="evenodd"><circle stroke="#fafafa" strokeWidth="2" fill="#222" cx="12" cy="12" r="14.5"></circle><path d="M9 15.698a.311.311 0 0 1-.32.302H7.32a.311.311 0 0 1-.32-.302v-5.396c0-.167.143-.302.32-.302h1.36c.177 0 .32.135.32.302v5.396zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm9 6.68c0 .177-.127.32-.284.32h-1.41c-.158 0-.285-.143-.285-.32v-2.908c0-.434.113-1.901-1.007-1.901-.87 0-1.046 1.004-1.082 1.455v3.354c0 .177-.127.32-.284.32h-1.364c-.157 0-.284-.143-.284-.32V9.424c0-.177.127-.32.284-.32h1.364c.157 0 .284.143.284.32v.54c.323-.544.802-.964 1.822-.964C17.013 9 17 11.375 17 12.68v3z" fill="#fafafa"></path></g></svg>
         </svg>
       </a>
     </div>
@@ -32,7 +32,7 @@ const ProfilePic = (props) => {
 };
 
 // const lightH3color = "#74c3f5";
-const lightH3color = "#64A3E5";
+const lightH3color = "#888";
 
 
 const EnglishTeam = (props) => (
@@ -40,7 +40,6 @@ const EnglishTeam = (props) => (
 
     <div className="team-header">
       <h1>Team</h1>
-      {/* <h2 style={{ color: lightH3color }}>Managing Partners</h2> */}
     </div>
 
     <div className="section-container">
@@ -52,7 +51,7 @@ const EnglishTeam = (props) => (
         <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
             <h3>Hanieh Sadat</h3>
-            <div style={{ color: lightH3color, fontWeight: 300 }}>Managing Partner</div>
+            <div className="subtitle">Managing Partner</div>
           </div>
         </div>
       </div>
@@ -73,7 +72,7 @@ She is the founder and chairwoman of ImpactX Lab, a token generation event accel
         <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
             <h3>Peita Lin</h3>
-            <div style={{ color: lightH3color, fontWeight: 300 }}>Managing Partner</div>
+            <div className="subtitle">Managing Partner</div>
           </div>
         </div>
       </div>
@@ -86,23 +85,6 @@ She is the founder and chairwoman of ImpactX Lab, a token generation event accel
     </div>
 
 
-    <div className="section-container">
-      <div className="flex-profile">
-        <div className="flex-profle-inner" style={{ position: "absolute" }}>
-          <img className="profile-pic" src={imgDir + "profilepic-ward.png"} />
-          <ProfilePic href="https://www.linkedin.com/in/wardhendon/"/>
-        </div>
-        <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
-          <div>
-            <h3>Ward Hendon</h3>
-          </div>
-        </div>
-      </div>
-      <div className="">
-        Ward is a successful entrepreneur, attorney and teacher.  After practicing law with King & Spalding, he co-founded Axiom Law in 2000.  Axiom grew into the world’s largest and fastest growing provider of tech-enabled legal services. Over 15 years with Axiom, Ward sat on the executive management committee and held a variety of sales, operations and management roles, scaling the firm to over $200m in revenue, and 1300+ employees.  He is currently an adjunct professor at UCLA Anderson Business School.
-        Ward works with our portfolio companies to scale and develop effective organisational processes. He specialises in the legal aspects of cryptocurrency investments and due diligence.
-      </div>
-    </div>
 
 
     <div className="section-container">
@@ -129,44 +111,21 @@ He founded AINTSYS in 2006, which is a private scientific research institute. Th
     <div className="section-container">
       <div className="flex-profile">
         <div className="flex-profle-inner" style={{ position: "absolute" }}>
-          <img className="profile-pic" src={imgDir + "profilepic-alex.jpg"} />
-          <ProfilePic href="https://www.linkedin.com/in/garkoosha/"/>
+          <img className="profile-pic" src={imgDir + "profilepic-denis.jpg"} />
+          <ProfilePic href="https://www.linkedin.com/in/denislam/"/>
         </div>
         <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
-            <h3>Alex Garkoosha</h3>
+            <h3>Denis Lam</h3>
           </div>
         </div>
       </div>
       <div className="">
-Alex is a PhD in Math, and early Ethereum adopter. Enrolled at the best Russian university in the age of 15, been doing science until 2015 (with PhD thesis devoted to research topics in algebraic geometry and superstring theory).
+Denis is a serial entrepreneur, early stage blockchain startup investor, and founder of IoTBlock, a blockchain-enabled data governance platform for enterprise IoT and digital data.
   <p/>
-  In Feb 2014, he discovered how blockchains work and fell in love with the technology. He was the ~15th member of the #ethereum-dev Skype chat, and was one of the first smart contract writers ever. In 2016 worked for the Central Bank of Russia, developing a zk-SNARK-based anonymous bondholder voting protocol. In 2017 he founded ModernToken, the boutique consulting company which builds decentralized architectures for products and write smart contracts of any complexity.
+He holds a B.S. in Engineering from University of California, Berkeley with emphasis in Biotechnology and is also a full stack software engineer who began coding as a teenager. Previously, he was the CSO/CIO for RFID and Card Technology, an IoT electronics manufacturer and data solutions company, where he founded an Innovation Lab to research the use of blockchain in global enterprise supply chain applications. Having experience in enterprise digital transformation, business development, product strategy, and investing in blockchain ventures, Denis drives investment decisions and serves as a strategic advisor for portfolio companies.
       </div>
     </div>
-
-    {(
-      props.redirect &&
-      <div className="section-container">
-        <div className="flex-profile">
-          <div className="flex-profle-inner" style={{ position: "absolute" }}>
-            <img className="profile-pic" src={imgDir + "profilepic-matt.jpg"} />
-            <ProfilePic href="https://www.linkedin.com/in/matthewmjeaton/"/>
-          </div>
-          <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
-            <div>
-              <h3>Matthew Eaton</h3>
-            </div>
-          </div>
-        </div>
-        <div className="">
-  Matthew was an aerospace engineering officer in the Royal Australian Airforce, later founding Seasoft Digital for development consultancy and software solutions. He has 8 Years of project and engineering management experience leading teams of 15-110 personnel.
-            <p/>
-  He is an Erlang specialist, a functional programming language for large-scale distributed systems and has deployed applications including distributed cryptocurrency miners, enterprise VR applications with WebVR, C++ and Unreal Engine, digital signal processing applications with C++, JUCE and RackAFX, and logistics data aggregators.
-        </div>
-      </div>
-    )}
-
 
     <div className="section-container">
       <div className="flex-profile">
@@ -190,7 +149,7 @@ James Yang is the creator of Netta and FractalNets.  He received his Ph.D. from 
 
     <div className="team-header">
       <div>
-        <h3 style={{ color: "#37505C", fontSize: 22}}>Advisors</h3>
+        <h3 style={{ color: "#222", fontSize: 28}}>Advisors</h3>
       </div>
     </div>
 
@@ -202,12 +161,12 @@ James Yang is the creator of Netta and FractalNets.  He received his Ph.D. from 
         <div className="flex-profile-inner">
           <div>
             <h3>Jeff Wernick</h3>
-            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
+            <div className="subtitle">Advisor</div>
           </div>
         </div>
       </div>
       <div className="">
-        Jeffery started his career trading options and futures on the CBOC, CBOT and the CME. After working at Salomon Brothers and later the National Bank of Detroit in quantitative research, he founded AVI Portfolio Services Company, Inc. which specialized in risk management in exotic derivative products, which was sold in 1984. He has since been investing in a variety of asset classes, including distressed companies, seed capital, derivatives, structured financial products, lending platforms, biomedical, human genome project, blockchain, and bitcoin.
+        Jeffrey started his career trading options and futures on the CBOC, CBOT and the CME. After working at Salomon Brothers and later the National Bank of Detroit in quantitative research, he founded AVI Portfolio Services Company, Inc. which specialized in risk management in exotic derivative products, which was sold in 1984. He has since been investing in a variety of asset classes, including distressed companies, seed capital, derivatives, structured financial products, lending platforms, biomedical, human genome project, blockchain, and bitcoin.
       </div>
     </div>
 
@@ -220,7 +179,7 @@ James Yang is the creator of Netta and FractalNets.  He received his Ph.D. from 
         <div className="flex-profile-inner">
           <div>
             <h3>Dr. Washington Sanchez</h3>
-            <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
+            <div className="subtitle">Advisor</div>
           </div>
         </div>
       </div>
@@ -239,7 +198,7 @@ James Yang is the creator of Netta and FractalNets.  He received his Ph.D. from 
           <div className="flex-profile-inner">
             <div>
               <h3>Bill Tai</h3>
-              <div style={{ color: lightH3color, fontWeight: 200 }}>Advisor</div>
+              <div className="subtitle">Advisor</div>
             </div>
           </div>
         </div>
@@ -260,8 +219,7 @@ const ChineseTeam = () => (
 
     <div className="team-header">
       <div>
-        <h1 style={{ color: "#37505C" }}>球队</h1>
-        <h2 style={{ color: lightH3color }}>管理伙伴</h2>
+        <h1>球队</h1>
       </div>
     </div>
 
@@ -300,23 +258,6 @@ const ChineseTeam = () => (
       </div>
     </div>
 
-    <div className="section-container">
-      <div className="flex-profile">
-        <div className="flex-profle-inner" style={{ position: "absolute" }}>
-          <img className="profile-pic" src={imgDir + "profilepic-ward.png"} />
-          <ProfilePic href="https://www.linkedin.com/in/wardhendon/"/>
-        </div>
-        <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
-          <div>
-            <h3>Ward Hendon</h3>
-          </div>
-        </div>
-      </div>
-      <div className="">
-沃德是一位成功的企业家，律师和教师。 在与King＆Spalding一起执业后，他于2000年共同创立了Axiom Law. Axiom成长为世界上规模最大，发展最快的技术法律服务提供商。 在Axiom工作超过15年后，Ward一直担任执行管理委员会成员，担任过各种销售，运营和管理职务，将公司业务扩展到超过2亿美元的收入，以及1300多名员工。 他目前是加州大学洛杉矶分校安德森商学院的兼职教授。
-         Ward与我们的投资组合公司合作，以扩展和开发有效的组织流程。 他擅长加密货币投资和尽职调查的法律方面。
-      </div>
-    </div>
 
 
     <div className="section-container">
@@ -342,18 +283,19 @@ Dmitry是Moeco的连续创业者和创始人，Moeco是一个支持区块链的�
     <div className="section-container">
       <div className="flex-profile">
         <div className="flex-profle-inner" style={{ position: "absolute" }}>
-          <img className="profile-pic" src={imgDir + "profilepic-alex.jpg"} />
-          <ProfilePic href="https://www.linkedin.com/in/garkoosha/"/>
+          <img className="profile-pic" src={imgDir + "profilepic-denis.jpg"} />
+          <ProfilePic href="https://www.linkedin.com/in/denislam/"/>
         </div>
         <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
-            <h3>Alex Garkoosha</h3>
+            <h3>Denis Lam</h3>
           </div>
         </div>
       </div>
       <div className="">
-Alex是数学博士，也是早期的以太坊博士。 入读15岁最好的俄罗斯大学，直到2015年一直从事科学研究（博士论文致力于代数几何和超弦理论的研究课题）。
-   2014年2月，他发现了区块链如何运作并爱上了这项技术。 他是＃ethereum-dev Skype聊天的第15个成员，并且是有史以来第一个智能合约作家之一。 2016年，他在俄罗斯中央银行工作，开发了基于zk-SNARK的匿名债券持有人投票协议。 2017年，他创立了ModernToken，这是一家精品咨询公司，为产品构建分散式架构，并编写任何复杂的智能合约。
+Denis是一位连续创业者，早期区块链创业投资者，也是IoTBlock的创始人，IoTBlock是一个支持区块链的企业物联网和数字数据数据治理平台。
+  <p/>
+他持有B.S. 他是加利福尼亚大学伯克利分校的工程专业，主修生物技术，同时也是一名全面的软件工程师，十几岁时开始编写代码。 此前，他曾担任物联网电子制造商和数据解决方案公司RFID和卡技术的CSO / CIO，在那里他创建了一个创新实验室，研究区块链在全球企业供应链应用中的应用。 Denis拥有企业数字化转型，业务开发，产品战略和区块链投资方面的经验，可以推动投资决策，并为投资组合公司提供战略顾问服务。
       </div>
     </div>
 
@@ -397,7 +339,7 @@ James Yang是Netta和FractalNets的创造者。 他获得了博士学位。 来�
         </div>
       </div>
       <div className="">
-Jeffery在CBOC，CBOT和CME开始了他的职业交易期权和期货交易。在所罗门兄弟公司和后来的底特律国家银行定量研究工作后，他创立了AVI Portfolio Services Company，Inc。，专门从事异国情调衍生产品的风险管理，于1984年出售。他从那时起就投资了各种各样的产品。资产类别，包括陷入困境的公司，种子资本，衍生品，结构性金融产品，贷款平台，生物医学，人类基因组计划，区块链和比特币。
+Jeffrey在CBOC，CBOT和CME开始了他的职业交易期权和期货交易。在所罗门兄弟公司和后来的底特律国家银行定量研究工作后，他创立了AVI Portfolio Services Company，Inc。，专门从事异国情调衍生产品的风险管理，于1984年出售。他从那时起就投资了各种各样的产品。资产类别，包括陷入困境的公司，种子资本，衍生品，结构性金融产品，贷款平台，生物医学，人类基因组计划，区块链和比特币。
       </div>
     </div>
 
@@ -448,8 +390,7 @@ const RussianTeam = () => (
 
     <div className="team-header">
       <div>
-        <h1 style={{ color: "#37505C" }}>команда</h1>
-        <h2 style={{ color: lightH3color }}>Управляющие партнеры</h2>
+        <h1>команда</h1>
       </div>
     </div>
 
@@ -489,24 +430,6 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
       </div>
     </div>
 
-    <div className="section-container">
-      <div className="flex-profile">
-        <div className="flex-profle-inner" style={{ position: "absolute" }}>
-          <img className="profile-pic" src={imgDir + "profilepic-ward.png"} />
-          <ProfilePic href="https://www.linkedin.com/in/wardhendon/"/>
-        </div>
-        <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
-          <div>
-            <h3>Ward Hendon</h3>
-          </div>
-        </div>
-      </div>
-      <div className="">
-Уорд - успешный предприниматель, адвокат и учитель. После практики закона с King & Spalding, он основал Аксиома права в 2000 году. Axiom выросла в крупнейший и быстро растущий поставщик в мире юридических услуг. Более 15 лет с Axiom, Уорд сидел в исполнительном комитете управления и занимался различными ролями продаж, операций и управления, масштабируя фирму до более чем 200 миллионов долларов дохода и 1300 + сотрудников. В настоящее время он является адъюнкт-профессором в UCLA Anderson Business School.
-         Уорд работает с нашими портфельными компаниями, чтобы масштабировать и развивать эффективные организационные процессы. Он специализируется на юридических аспектах инвестиций в криптовалюты и должной осмотрительности.
-      </div>
-    </div>
-
 
     <div className="section-container">
       <div className="flex-profile">
@@ -532,18 +455,19 @@ Hanieh Sadat - бывший вице-президент Morgan Stanley, Private 
     <div className="section-container">
       <div className="flex-profile">
         <div className="flex-profle-inner" style={{ position: "absolute" }}>
-          <img className="profile-pic" src={imgDir + "profilepic-alex.jpg"} />
-          <ProfilePic href="https://www.linkedin.com/in/garkoosha/"/>
+          <img className="profile-pic" src={imgDir + "profilepic-denis.jpg"} />
+          <ProfilePic href="https://www.linkedin.com/in/denislam/"/>
         </div>
         <div className="flex-profile-inner" style={{ position: "relative", left: 110 }}>
           <div>
-            <h3>Alex Garkoosha</h3>
+            <h3>Denis Lam</h3>
           </div>
         </div>
       </div>
       <div className="">
-Алекс - кандидат наук по математике, и усыновитель раннего Эфириума. Поступил в лучший российский университет в возрасте 15 лет, занимался наукой до 2015 года (с кандидатской диссертацией, посвященной темам исследований в алгебраической геометрии и теории суперструн).
-   В феврале 2014 года он обнаружил, как работают блокчины и влюбился в эту технологию. Он был ~ 15-м членом чата Skype # ethereum-dev и был одним из первых смарт-писателей-контрактников. В 2016 году работал в Центральном банке России, разрабатывая протокол анонимного голосования акционеров zk-SNARK. В 2017 году он основал бутик-консалтинговую компанию ModernToken, которая строит децентрализованные архитектуры для продуктов и пишет интеллектуальные контракты любой сложности.
+Денис является серийным предпринимателем, начинающим инвестором в блокчейн на ранних этапах и основателем IoTBlock, платформы управления данными с поддержкой блокчейнов для корпоративных IoT и цифровых данных.
+  <p/>
+Он имеет степень бакалавра инженер в Калифорнийском университете, Беркли, специализирующийся на биотехнологии, а также инженер-программист с полным стеком, который начал программировать в подростковом возрасте. Ранее он был CSO / CIO для RFID и карточных технологий, производителя электроники IoT и компании, занимающейся решениями данных, где он основал Innovation Lab для исследования использования блокчейна в глобальных приложениях цепочки поставок предприятия. Имея опыт работы в области цифровой трансформации предприятий, развития бизнеса, стратегии продуктов и инвестиций в блокчейн-проекты, Денис принимает инвестиционные решения и является стратегическим советником для портфельных компаний.
       </div>
     </div>
 
